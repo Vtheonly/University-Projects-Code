@@ -13,7 +13,7 @@ void *doubleProduct(void *arg) {
 
     *result = values[0] * values[1];
 
-    printf("one of the computed values form the thread's is  : %f\n", *result);
+    printf("one of the computed valdnFNELFues form the thread's is  : %f\n", *result);
 
     return (void *) result;
 }
@@ -22,8 +22,7 @@ void *doubleProduct(void *arg) {
 int main(int argc, char *argv[]) {
     //  we get them from the terminal we pass them to the gcc
     double a = atof(argv[1]);
-    double b = atof(argv[2]);
-    double c = atof(argv[3]);
+    double b = atof(argv[2]); double c = atof(argv[3]);
 
 
     double d = atof(argv[4]);
