@@ -13,7 +13,7 @@ void *doubleProduct(void *arg) {
 
     *result = values[0] * values[1];
 
-    printf("one of the computed values form the thread's is : %f\n", *result);
+    printf("one of the computed valdnFNELFues form the thread's is  : %f\n", *result);
 
     return (void *) result;
 }
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
     pthread_create(&thread2, NULL, doubleProduct, &args2);
 
 
-    // waiting to merge the thread branches
+    // waiting to merg the thread branches 
     pthread_join(thread1, (void **) &result1);
     pthread_join(thread2, (void **) &result2);
 
