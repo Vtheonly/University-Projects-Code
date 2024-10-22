@@ -2,7 +2,6 @@
 // Created by mersel on 10/22/24.
 //
 
-
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>

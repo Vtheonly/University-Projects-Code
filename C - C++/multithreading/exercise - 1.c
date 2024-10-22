@@ -13,7 +13,7 @@ void *doubleProduct(void *arg) {
 
     *result = values[0] * values[1];
 
-    printf("one of the computed valdnFNELFues form the thread's is  : %f\n", *result);
+    printf("one of the computed values form the thread's is  : %f\n", *result);
 
     return (void *) result;
 }
