@@ -1,3 +1,6 @@
 # ninja log v6
 0	49	1729530092831760770	CMakeFiles/multithreading.dir/muliplactation.c.o	159c4d31d42b2867
 49	80	1729530092879761559	multithreading	515bcfa2b8073af9
+2	44	1729628150421417404	CMakeFiles/multithreading.dir/exercise_-_1.c.o	de4eebfa7798b141
+2	45	1729628150421417404	CMakeFiles/multithreading.dir/exercise_-_2.c.o	2254bddf9d076061
+2	31	1729633963695698565	CMakeFiles/multithreading.dir/exercise_-_2.c.o	2254bddf9d076061

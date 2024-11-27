@@ -55,6 +55,12 @@ build CMakeFiles/multithreading.dir/exercise_-_1.c.o: C_COMPILER__multithreading
   OBJECT_DIR = CMakeFiles/multithreading.dir
   OBJECT_FILE_DIR = CMakeFiles/multithreading.dir
 
+build CMakeFiles/multithreading.dir/exercise_-_2.c.o: C_COMPILER__multithreading_unscanned_Debug /home/mersel/Documents/Projects/University$ Projects$ Code/C$ -$ C++/multithreading/exercise$ -$ 2.c || cmake_object_order_depends_target_multithreading
+  DEP_FILE = CMakeFiles/multithreading.dir/exercise_-_2.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/multithreading.dir
+  OBJECT_FILE_DIR = CMakeFiles/multithreading.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target multithreading
@@ -63,7 +69,7 @@ build CMakeFiles/multithreading.dir/exercise_-_1.c.o: C_COMPILER__multithreading
 #############################################
 # Link the executable multithreading
 
-build multithreading: C_EXECUTABLE_LINKER__multithreading_Debug CMakeFiles/multithreading.dir/exercise_-_1.c.o
+build multithreading: C_EXECUTABLE_LINKER__multithreading_Debug CMakeFiles/multithreading.dir/exercise_-_1.c.o CMakeFiles/multithreading.dir/exercise_-_2.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/multithreading.dir
   POST_BUILD = :
