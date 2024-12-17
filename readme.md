@@ -1,56 +1,15 @@
-xcvbnjmkl;'
-# Advanced Java Swing Utility Workbench
+# University Projects Code
 
-## Project Overview
-A sophisticated, multi-functional Java Swing application demonstrating advanced software engineering techniques and utility tools.
+This repository contains various coding projects developed during university lab sessions, primarily focused on **Software Engineering**. The projects cover a wide range of topics and programming languages, including:
 
-## Features
+- **3000R**: Specific project or assignment.
+- **C / C++ Multithreading**: Examples and assignments demonstrating multithreading concepts in C/C++.
+- **Compiler Design (FLEX/TP1)**: Work related to compiler design using tools like FLEX.
+- **Java Swing**: GUI-based applications developed using Java Swing.
+- **Others**: Includes minor contributions in AI (Matlab and R) and some assembly projects.
 
-### 1. Text Transformer
-- Multiple text transformation options
-- Supports:
-  - Uppercase/Lowercase conversion
-  - Text reversal
-  - Word counting
-  - Camel case conversion
+### Contents
+- **Languages Used**: C, C++, Java, Matlab, R, Assembly
+- **Focus Areas**: Multithreading, Compiler Design, GUI Development, Software Engineering.
 
-### 2. Regex Toolkit
-- Advanced pattern matching
-- Real-time regex testing
-- Comprehensive match extraction
-
-### 3. Hash Generator
-- Multiple hash algorithm support
-- Generates:
-  - MD5
-  - SHA-1
-  - SHA-256
-  - SHA-512
-
-### 4. URL Encoder/Decoder
-- URL encoding and decoding
-- UTF-8 support
-- Error handling
-
-### 5. File Utilities
-- File selection and analysis
-- Detailed file metadata
-- Permission and size information
-
-## Technical Highlights
-- Java Swing implementation
-- Modular and extensible design
-- Professional UI/UX
-- Comprehensive error management
-
-## Requirements
-- Java 8 or higher
-- Swing library
-
-## Getting Started
-1. Clone the repository
-2. Compile the Java source files
-3. Run the [App](cci:2://file:///home/mersel/Documents/Projects/University%20Projects%20Code/Java%20Swing/TP%201/App.java:16:0-361:1) class
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+Feel free to explore the folders for specific projects and contributions!
