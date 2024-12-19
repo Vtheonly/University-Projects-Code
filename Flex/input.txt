@@ -1,0 +1,4 @@
+hello@example.com
+invalid-email.com
+test.email@domain.org
+user@web123.com

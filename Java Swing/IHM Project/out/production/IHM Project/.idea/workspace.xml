@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fecda16d-8c5c-4fb7-a97d-0be5972f87a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/IHM Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagementAppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/AdminTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/ClientsTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/ReservationsTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/VehiclesTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Toolkit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Update/CarUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/query.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/JButtonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/OtherExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/TP 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/out/production/TP 1/TP 1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3000R/mips_program.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/multithreading.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/TypeTableau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3fc89e155c985253ee1a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-70a370af386e2d5a2c55.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b7fdf147eff7ace2edbd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-22T16-56-35-0223.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/target-multithreading-Debug-373a17fbab0915edaa27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-5566bc40437a6707c7eb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/exercise_-_1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/exercise_-_2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/muliplactation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/exercise - 1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/exercise - 2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/muliplactation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/muliplactation2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Compiler Design/FLEX/TP1/TP1.l" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Compiler Design/FLEX/TP1/lex.yy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP 1/App.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2phKHNETVhVydJ3lAIi9Ish87qJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.JDBConnector.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoginController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainPageController.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mersel/Documents/Projects/University Projects Code/Java Swing/IHM Project/mysql-connector-j-8.0.33.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JDBConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBConnector" />
+      <module name="IHM Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JDBConnector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fecda16d-8c5c-4fb7-a97d-0be5972f87a6" name="Changes" comment="" />
+      <created>1733212779068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733212779068</updated>
+      <workItem from="1733212780510" duration="2630000" />
+      <workItem from="1733217108668" duration="460000" />
+      <workItem from="1733400285292" duration="20488000" />
+      <workItem from="1733635187556" duration="13000" />
+      <workItem from="1734177405936" duration="248000" />
+      <workItem from="1734261235709" duration="74000" />
+      <workItem from="1734389101818" duration="366000" />
+      <workItem from="1734433449278" duration="599000" />
+      <workItem from="1734456101691" duration="2676000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
