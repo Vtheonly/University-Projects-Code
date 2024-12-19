@@ -1,3 +1,0 @@
-/home/mersel/Documents/Projects/University Projects Code/C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir
-/home/mersel/Documents/Projects/University Projects Code/C - C++/multithreading/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mersel/Documents/Projects/University Projects Code/C - C++/multithreading/cmake-build-debug/CMakeFiles/rebuild_cache.dir
