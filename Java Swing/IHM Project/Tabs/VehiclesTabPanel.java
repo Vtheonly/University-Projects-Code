@@ -1,131 +1,159 @@
 package Tabs;
 
+import Connector.JDBConnector;
+import ParameterForum.Vehicule;
+
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.List;
 
 public class VehiclesTabPanel extends JPanel {
 
     private JTable vehiclesTable;
-    private DefaultTableModel tableModel;
+    private static DefaultTableModel tableModel;
+    public static HashMap<String, String> updatePlaceholder = new HashMap<>();
 
     public VehiclesTabPanel() {
-        setLayout(new BorderLayout()); // Use BorderLayout for structuring the panel
+        
+        updatePlaceholder.put("id_vehicule", "");
+        updatePlaceholder.put("marque", "");
+        updatePlaceholder.put("modele", "");
+        updatePlaceholder.put("annee", "");
+        updatePlaceholder.put("type", "");
+        updatePlaceholder.put("carburant", "");
+        updatePlaceholder.put("prix_location_jour", "");
+        updatePlaceholder.put("etat", "");
 
-        // Add a title label at the top
+        setLayout(new BorderLayout());
+
+        
         JLabel titleLabel = new JLabel("Vehicles Management", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
         add(titleLabel, BorderLayout.NORTH);
 
-        // Add a table to display vehicle data
-        String[] columns = {"ID", "Brand", "Model", "Year", "Status"};
-        Object[][] data = {
-                {"1", "Toyota", "Corolla", "2022", "Available"},
-                {"2", "Honda", "Civic", "2021", "Rented"},
-                {"3", "Ford", "Focus", "2020", "Maintenance"}
-        };
-
-        // Use DefaultTableModel to allow dynamic updates to the table
-        tableModel = new DefaultTableModel(data, columns);
+        
+        String[] columns = {"ID", "Marque", "Modèle", "Année", "Type", "Carburant", "Prix/Jour", "État"};
+        tableModel = new DefaultTableModel(columns, 0);
         vehiclesTable = new JTable(tableModel);
         JScrollPane tableScrollPane = new JScrollPane(vehiclesTable);
         add(tableScrollPane, BorderLayout.CENTER);
 
-        // Add a button panel at the bottom
+        
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
-
         JButton addButton = new JButton("Add Vehicle");
         JButton editButton = new JButton("Edit Vehicle");
         JButton deleteButton = new JButton("Delete Vehicle");
-
+        JButton searchButton = new JButton("Search Vehicle");
         buttonPanel.add(addButton);
         buttonPanel.add(editButton);
         buttonPanel.add(deleteButton);
-
+        buttonPanel.add(searchButton);
         add(buttonPanel, BorderLayout.SOUTH);
 
-        // Add button functionality
+        
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                onAddVehicle();
+                new Vehicule("C"); 
             }
         });
 
         editButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                onEditVehicle();
+                if (vehiclesTable.getSelectedRow() != -1) {
+                    new Vehicule("U"); 
+                } else {
+                    JOptionPane.showMessageDialog(VehiclesTabPanel.this, "Please select a vehicle to edit.", "No Selection", JOptionPane.WARNING_MESSAGE);
+                }
             }
         });
 
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                onDeleteVehicle();
+                if (vehiclesTable.getSelectedRow() != -1) {
+                    int response = JOptionPane.showConfirmDialog(VehiclesTabPanel.this,
+                            "Are you sure you want to delete the selected vehicle?",
+                            "Confirm Delete", JOptionPane.YES_NO_OPTION);
+                    if (response == JOptionPane.YES_OPTION) {
+                        JDBConnector.deleteVehicle(updatePlaceholder);
+                        refreshTable();
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(VehiclesTabPanel.this, "Please select a vehicle to delete.", "No Selection", JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Vehicule("S"); 
+            }
+        });
+
+        
+        vehiclesTable.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    getFocusedRowData();
+                    System.out.println(updatePlaceholder);
+
+                }
             }
         });
     }
 
-    // Method to handle adding a vehicle
-    private void onAddVehicle() {
-        String id = JOptionPane.showInputDialog(this, "Enter Vehicle ID:");
-        String brand = JOptionPane.showInputDialog(this, "Enter Vehicle Brand:");
-        String model = JOptionPane.showInputDialog(this, "Enter Vehicle Model:");
-        String year = JOptionPane.showInputDialog(this, "Enter Vehicle Year:");
-        String status = JOptionPane.showInputDialog(this, "Enter Vehicle Status:");
-
-        if (id != null && brand != null && model != null && year != null && status != null) {
-            tableModel.addRow(new Object[]{id, brand, model, year, status});
+    
+    public static void populateTable(List<HashMap<String, String>> vehicleData) {
+        tableModel.setRowCount(0);
+        for (HashMap<String, String> vehicle : vehicleData) {
+            tableModel.addRow(new Object[]{
+                    vehicle.get("id_vehicule"),
+                    vehicle.get("marque"),
+                    vehicle.get("modele"),
+                    vehicle.get("annee"),
+                    vehicle.get("type"),
+                    vehicle.get("carburant"),
+                    vehicle.get("prix_location_jour"),
+                    vehicle.get("etat")
+            });
         }
     }
 
-    // Method to handle editing a vehicle
-    private void onEditVehicle() {
+    
+    public static void refreshTable() {
+        try {
+            populateTable(JDBConnector.getVehicles(new HashMap<>()));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    
+    public void getFocusedRowData() {
         int selectedRow = vehiclesTable.getSelectedRow();
-        if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "Please select a vehicle to edit.", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
+        if (selectedRow != -1) {
+            updatePlaceholder.put("id_vehicule", tableModel.getValueAt(selectedRow, 0).toString());
+            updatePlaceholder.put("marque", tableModel.getValueAt(selectedRow, 1).toString());
+            updatePlaceholder.put("modele", tableModel.getValueAt(selectedRow, 2).toString());
+            updatePlaceholder.put("annee", tableModel.getValueAt(selectedRow, 3).toString());
+            updatePlaceholder.put("type", tableModel.getValueAt(selectedRow, 4).toString());
+            updatePlaceholder.put("carburant", tableModel.getValueAt(selectedRow, 5).toString());
+            updatePlaceholder.put("prix_location_jour", tableModel.getValueAt(selectedRow, 6).toString());
+            updatePlaceholder.put("etat", tableModel.getValueAt(selectedRow, 7).toString());
+        } else {
+            updatePlaceholder.clear();
         }
-
-        String id = (String) tableModel.getValueAt(selectedRow, 0);
-        String brand = JOptionPane.showInputDialog(this, "Edit Vehicle Brand:", tableModel.getValueAt(selectedRow, 1));
-        String model = JOptionPane.showInputDialog(this, "Edit Vehicle Model:", tableModel.getValueAt(selectedRow, 2));
-        String year = JOptionPane.showInputDialog(this, "Edit Vehicle Year:", tableModel.getValueAt(selectedRow, 3));
-        String status = JOptionPane.showInputDialog(this, "Edit Vehicle Status:", tableModel.getValueAt(selectedRow, 4));
-
-        if (brand != null && model != null && year != null && status != null) {
-            tableModel.setValueAt(brand, selectedRow, 1);
-            tableModel.setValueAt(model, selectedRow, 2);
-            tableModel.setValueAt(year, selectedRow, 3);
-            tableModel.setValueAt(status, selectedRow, 4);
-        }
-    }
-
-    // Method to handle deleting a vehicle
-    private void onDeleteVehicle() {
-        int selectedRow = vehiclesTable.getSelectedRow();
-        if (selectedRow == -1) {
-            JOptionPane.showMessageDialog(this, "Please select a vehicle to delete.", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete this vehicle?", "Confirm Delete", JOptionPane.YES_NO_OPTION);
-        if (confirm == JOptionPane.YES_OPTION) {
-            tableModel.removeRow(selectedRow);
-        }
-    }
-
-    public static void main(String[] args) {
-        // Test the Tabs.VehiclesTabPanel as a standalone component
-        JFrame frame = new JFrame("Vehicles Tab Test");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 600);
-        frame.add(new VehiclesTabPanel());
-        frame.setLocationRelativeTo(null); // Center the frame
-        frame.setVisible(true);
     }
 }

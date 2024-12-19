@@ -11,8 +11,9 @@ CREATE TABLE Utilisateur (
 -- Table: Vehicule
 CREATE TABLE Vehicule (
                           id_vehicule INT AUTO_INCREMENT PRIMARY KEY,
+
                           marque VARCHAR(255) NOT NULL,
-                          modele VARCHAR(255) NOT NULL,
+                                modele VARCHAR(255) NOT NULL,
                           annee INT NOT NULL,
                           type VARCHAR(50) NOT NULL,
                           carburant VARCHAR(50) NOT NULL,

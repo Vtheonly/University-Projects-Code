@@ -4,7 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fecda16d-8c5c-4fb7-a97d-0be5972f87a6" name="Changes" comment="added more tabs" />
+    <list default="true" id="fecda16d-8c5c-4fb7-a97d-0be5972f87a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/IHM Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/AdminTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/ClientsTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/ReservationsTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tabs/VehiclesTabPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Toolkit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Update/CarUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/query.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/JButtonExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/OtherExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/TP 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TP 1/out/production/TP 1/TP 1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3000R/mips_program.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/multithreading.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/TypeTableau" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3fc89e155c985253ee1a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-70a370af386e2d5a2c55.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b7fdf147eff7ace2edbd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-22T16-56-35-0223.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/target-multithreading-Debug-373a17fbab0915edaa27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-5566bc40437a6707c7eb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/exercise_-_1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/exercise_-_2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/multithreading.dir/muliplactation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/ex2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/exercise - 1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/exercise - 2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/muliplactation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C - C++/multithreading/muliplactation2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Compiler Design/FLEX/TP1/TP1.l" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Compiler Design/FLEX/TP1/lex.yy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP 1/App.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,9 +91,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -107,43 +178,10 @@
       <workItem from="1734433449278" duration="599000" />
       <workItem from="1734456101691" duration="8238000" />
       <workItem from="1734518455630" duration="1623000" />
-      <workItem from="1734567007725" duration="197000" />
     </task>
-    <task id="LOCAL-00001" summary="added more tabs">
-      <option name="closed" value="true" />
-      <created>1734567082429</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1734567082429</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added more tabs">
-      <option name="closed" value="true" />
-      <created>1734567102084</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1734567102084</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added more tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more tabs" />
   </component>
 </project>

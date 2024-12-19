@@ -1,5 +1,3 @@
-import Tabs.*;
-
 import javax.swing.*;
 import java.util.HashMap;
 
@@ -7,6 +5,8 @@ import java.util.HashMap;
 class Toolkit {
 
     static int[] getPrivilege(HashMap<String, String> User) {
+
+
 
         return new int[] { 0, 1 ,2,3};
     }
@@ -29,7 +29,7 @@ class Toolkit {
 
 
 
-    // Parse user data into a HashMap
+    
     public static HashMap<String, String> parseUser(String nom, String prenom, String email, String motDePasse, String role) {
         HashMap<String, String> userData = new HashMap<>();
         userData.put("nom", nom);
@@ -40,7 +40,7 @@ class Toolkit {
         return userData;
     }
 
-    // Parse vehicle data into a HashMap
+    
     public static HashMap<String, String> parseVehicle(String marque, String modele, int annee, String type, String carburant, double prixLocationJour, String etat) {
         HashMap<String, String> vehicleData = new HashMap<>();
         vehicleData.put("marque", marque);
@@ -53,7 +53,7 @@ class Toolkit {
         return vehicleData;
     }
 
-    // Parse client data into a HashMap
+    
     public static HashMap<String, String> parseClient(String nom, String prenom, String telephone, String email, String numeroPermis) {
         HashMap<String, String> clientData = new HashMap<>();
         clientData.put("nom", nom);
@@ -64,7 +64,7 @@ class Toolkit {
         return clientData;
     }
 
-    // Parse reservation data into a HashMap
+    
     public static HashMap<String, String> parseReservation(int idVehicule, int idClient, String dateDebut, String dateFin, double montantTotal, String statut) {
         HashMap<String, String> reservationData = new HashMap<>();
         reservationData.put("id_vehicule", String.valueOf(idVehicule));
@@ -76,7 +76,7 @@ class Toolkit {
         return reservationData;
     }
 
-    // Parse return (Retour) data into a HashMap
+    
     public static HashMap<String, String> parseReturn(int idReservation, String dateRetour, String etatRetour, Double fraisSupplementaires) {
         HashMap<String, String> returnData = new HashMap<>();
         returnData.put("id_reservation", String.valueOf(idReservation));
@@ -86,7 +86,7 @@ class Toolkit {
         return returnData;
     }
 
-    // Parse payment data into a HashMap
+    
     public static HashMap<String, String> parsePayment(int idReservation, double montant, String datePaiement, String modePaiement) {
         HashMap<String, String> paymentData = new HashMap<>();
         paymentData.put("id_reservation", String.valueOf(idReservation));
