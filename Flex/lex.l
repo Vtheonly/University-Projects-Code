@@ -5,53 +5,53 @@ int nb_lig = 0; // Initialize to 0
 int nb_car = 0; // Initialize to 0
 %}
 
+
+
+
+INTEGER [0-9]+
+LPAREN \(
+RPAREN \) 
+PLUS \+ 
+MINUS \- 
+DIVIDE \/ 
+MULTIPLY \* 
+
 %%
 
 
-[0-9]+ INTEGER;
-\( LPAREN;
-\) RPAREN;
-\+ PLUS;
-\- MINUS;
-\/ DIVIDE;
-\* MULTIPLY;
-
-%%
-
-
-INTEGER {
+{INTEGER} {
     printf("INTEGER\t: %s\n", yytext);
 }
-LPAREN {
+
+{LPAREN} {
     printf("LP\t: %s\n", yytext);
 }
 
-RPAREN {
+{RPAREN} {
     printf("RP\t: %s\n", yytext);
 }
 
-MINUS {
+{MINUS} {
     printf("Minus\t: %s\n", yytext);
 }
 
-PLUS {
+{PLUS} {
     printf("Plus\t: %s\n", yytext);
 }
 
-DIVIDE {
+{DIVIDE} {
     printf("Div\t: %s\n", yytext);
 }
 
-MULTIPLY {
+{MULTIPLY} {
     printf("Mul\t: %s\n", yytext);
 }
-
 
 
 \n   {++nb_lig ; nb_car=0;} // For Debugging
 .    {++nb_car; }           // For Debugging
 
-
+%%
 
 int yywrap() {
   return 1;
