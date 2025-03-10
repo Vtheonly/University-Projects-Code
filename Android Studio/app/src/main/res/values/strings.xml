@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppTest</string>
+    <string name="center">Center</string>
+    <string name="top_left">Top Left</string>
+</resources>
